@@ -1,6 +1,4 @@
-﻿// 
-
-int [] myArray = new int [10];
+﻿int [] myArray = new int [10];
 
 
 void FillArray(int[]array)
@@ -24,23 +22,24 @@ PrintArray(myArray);
 Console.WriteLine();
 
 
-//void EvenNum(int[] myArray)
-//{
     int[] newArray = new int[myArray.Length];
     int j = 0;
 
     for (int i = 0; i < myArray.Length; i++)
     {
-      if (myArray[i] %2 == 0 && myArray[i] != 0)
-       { newArray [j] = myArray[i];
-        j++;}
-
-
+      if (myArray[i] % 2 == 0 && myArray[i] > 0)
+       {
+        newArray [i] = myArray[i];
+        j++;
+       } 
+        if(newArray[i] > 0)
+        {
         Console.Write($"{newArray[i]} ");
-         
+        }
     }
-    
 
-//}
-//int[] newArray = new int[10];
-//EvenNum(newArray);
+
+
+        
+
+
